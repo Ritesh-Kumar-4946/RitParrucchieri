@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Parrucchieri</string>
+
+    <!--drawer text (Start)-->
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="toolbar_image">Logo Image</string>
+    <string name="drawer_image_home">Home Image</string>
+
+
+    <string name="dr_tv_home">Home</string>
+    <string name="dr_tv_book_appointment">Book Appointment</string>
+    <string name="dr_tv_my_appointment">My Appointments</string>
+    <string name="dr_tv_my_account">My Account</string>
+    <string name="dr_tv_style_book">Style Book</string>
+    <string name="dr_tv_faq">FAQ</string>
+    <string name="dr_tv_contactus">Contact Us</string>
+    <string name="dr_tv_reload_app">Reload App</string>
+    <string name="dr_tv_logout">Logout</string>
+
+
+    <!--drawer text (End)-->
+
+    <!--image description (Start)-->
+    <string name="splash_image">Splash Image</string>
+    <string name="username_image">User Name Image</string>
+    <string name="userpassword_image">User Password Image</string>
+    <string name="loginbtn_image">Button Drawable Image</string>
+    <!--image description (Start)-->
+
+    <!--login screen strings (Start)-->
+    <string name="already_login">You already have an account? great Login here.</string>
+    <string name="forgo_password">Forgot Passsword? it\'s OK, RECOVER HERE&#8230;</string>
+    <string name="login_other">Or you can login with one of the following.</string>
+    <string name="register">Don\'t have an account? Register now.</string>
+    <string name="already_account_login">Have an account? Log in.</string>
+    <string name="user_names">User Name</string>
+    <string name="user_email_address">User Email Address</string>
+    <string name="login_email_address">Registered Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="click_login">Login</string>
+    <string name="click_signup">Sign Up</string>
+    <!--login screen strings (End)-->
+
+
+</resources>

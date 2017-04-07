@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="com.parrucchieri.SignUpActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_scroll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/ic_logo"
+                android:contentDescription="@string/splash_image" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_all_fields"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/iv_logo"
+                android:layout_marginTop="30dp"
+                android:padding="25dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_main_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/tv_alreadyaccount"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/semi_transparent_white">
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/sp_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="15sp"
+                        app:ms_arrow_tint="@color/white_milky"
+                        app:ms_background_color="@color/btn_login_pressed"
+                        app:ms_dropdown_height="wrap_content"
+                        app:ms_dropdown_max_height="300dp"
+                        app:ms_text_color="@color/white_milky" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_main_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_main_spinner"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/semi_transparent_white"
+                    android:padding="5dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tin_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:textColorHint="@color/white_milky">
+
+                        <EditText
+                            android:id="@+id/edt_signup_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ellipsize="start"
+                            android:gravity="clip_horizontal"
+                            android:hint="@string/user_names"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@color/white_milky"
+                            android:textSize="15sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_main_email_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_main_username"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/semi_transparent_white"
+                    android:padding="5dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tin_email_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:textColorHint="@color/white_milky">
+
+                        <EditText
+                            android:id="@+id/edt_signup_email_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ellipsize="start"
+                            android:gravity="clip_horizontal"
+                            android:hint="@string/user_email_address"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textColor="@color/white_milky"
+                            android:textSize="15sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_main_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_main_email_address"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/semi_transparent_white"
+                    android:padding="5dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tin_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:textColorHint="@color/white_milky">
+
+                        <in.anshul.libray.PasswordEditText
+                            android:id="@+id/edt_signup_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="@string/password"
+                            android:textColor="@color/white_milky"
+                            android:textSize="15sp"
+                            app:hide_drawable="@drawable/show_password"
+                            app:password_visible="false"
+                            app:show_drawable="@drawable/hide_password" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_main_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_main_password"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/semi_transparent_white"
+                    android:padding="5dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tin_confirm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:textColorHint="@color/white_milky">
+
+                        <in.anshul.libray.PasswordEditText
+                            android:id="@+id/edt_signup_confirm_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="@string/confirm_password"
+                            android:textColor="@color/white_milky"
+                            android:textSize="15sp"
+                            app:hide_drawable="@drawable/show_password"
+                            app:password_visible="false"
+                            app:show_drawable="@drawable/hide_password" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_btn_sign_up"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_main_confirm_password"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btn_signup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_presse_effect"
+                            android:elevation="3dp"
+                            android:shadowColor="#1499A8"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="5"
+                            android:text="@string/click_signup"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:theme="@style/Widget.AppCompat.Button.Colored" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_login_image"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp">
+
+                        <ImageView
+                            android:id="@+id/btn_login_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_arrow"
+                            android:contentDescription="@string/loginbtn_image" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_signup_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/rl_btn_sign_up"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/already_account_login"
+                    android:textColor="@color/text_color_effect"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_signup_progress"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:padding="3dp">
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            android:id="@+id/signup_progressbar_circular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="true"
+            android:indeterminateOnly="false"
+            app:cpb_colors="@array/gplus_colors" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#572334</color>
+    <color name="colorPrimary_semi_transparent">#33572334</color>
+    <color name="colorPrimaryDark">#411022</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="graycolor">#817c7d</color>
+    <color name="textwhite">#FFFFFF</color>
+    <color name="white_milky">#FFFFFFFF</color>
+    <color name="semi_transparent_white">#4DFFFFFF</color>
+    <color name="logintext">#FF993669</color>
+    <color name="registertext">#501935</color>
+    <color name="btn_login">#B94983</color>
+    <color name="snackbar_semitransparent">#4DB94983</color>
+    <color name="btn_login_pressed">#782c53</color>
+    <color name="dr_item_pressed">#B94983</color>
+
+    <color name="orange">#ff6600</color>
+    <color name="white">#FFFFFF</color>
+
+
+
+    <color name="colorControlNormal">#FF78909C</color>
+
+
+    <!--google type progress bar color (Start)-->
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+        <item>@color/gplus_color_5</item>
+
+    </integer-array>
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#FF4081</color>
+    <color name="gplus_color_5">#b23424</color>
+    <!--google type progress bar color (End)-->
+
+
+</resources>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_dr_home"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_iv_home"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_dr_home"
+                android:contentDescription="@string/drawer_image_home" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/rl_iv_home"
+            android:gravity="center_vertical"
+            android:text="@string/dr_tv_home"
+            android:textColor="@color/white_milky"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/dr_home_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_milky" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dr_book_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_dr_home">
+
+        <RelativeLayout
+            android:id="@+id/rl_iv_book_appointment"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv_book_appointment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_dr_book_appointment"
+                android:contentDescription="@string/drawer_image_home" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_book_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/rl_iv_book_appointment"
+            android:gravity="center_vertical"
+            android:text="@string/dr_tv_book_appointment"
+            android:textColor="@color/white_milky"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/dr_book_appointment_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_milky" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dr_my_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_dr_book_appointment">
+
+        <RelativeLayout
+            android:id="@+id/rl_iv_my_appointment"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv_my_appointment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_dr_my_appointment"
+                android:contentDescription="@string/drawer_image_home" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_my_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/rl_iv_my_appointment"
+            android:gravity="center_vertical"
+            android:text="@string/dr_tv_my_appointment"
+            android:textColor="@color/white_milky"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/dr_my_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_milky" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dr_my_acoount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_dr_my_appointment">
+
+        <RelativeLayout
+            android:id="@+id/rl_iv_my_acoount"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv_my_acoount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_dr_my_acccount"
+                android:contentDescription="@string/drawer_image_home" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_my_acoount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/rl_iv_my_acoount"
+            android:gravity="center_vertical"
+            android:text="@string/dr_tv_my_account"
+            android:textColor="@color/white_milky"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/dr_my_acoount"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_milky" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dr_style_book"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_dr_my_acoount">
+
+        <RelativeLayout
+            android:id="@+id/rl_iv_style_book"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv_style_book"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_dr_style_book"
+                android:contentDescription="@string/drawer_image_home" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_style_book"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/rl_iv_style_book"
+            android:gravity="center_vertical"
+            android:text="@string/dr_tv_style_book"
+            android:textColor="@color/white_milky"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/dr_style_book"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_milky" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dr_faq"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_dr_style_book">
+
+        <RelativeLayout
+            android:id="@+id/rl_iv_faq"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv_faq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_dr_faq"
+                android:contentDescription="@string/drawer_image_home" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_faq"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/rl_iv_faq"
+            android:gravity="center_vertical"
+            android:text="@string/dr_tv_faq"
+            android:textColor="@color/white_milky"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/dr_faq"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_milky" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dr_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_dr_faq">
+
+        <RelativeLayout
+            android:id="@+id/rl_iv_contact_us"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_dr_contactus"
+                android:contentDescription="@string/drawer_image_home" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_contact_us"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/rl_iv_contact_us"
+            android:gravity="center_vertical"
+            android:text="@string/dr_tv_contactus"
+            android:textColor="@color/white_milky"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/dr_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_milky" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dr_reload_app"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_dr_contact_us">
+
+        <RelativeLayout
+            android:id="@+id/rl_iv_reload_app"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv_reload_app"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_dr_reload_app"
+                android:contentDescription="@string/drawer_image_home" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_reload_app"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/rl_iv_reload_app"
+            android:gravity="center_vertical"
+            android:text="@string/dr_tv_reload_app"
+            android:textColor="@color/white_milky"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/dr_reload_app"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_milky" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dr_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_dr_reload_app">
+
+        <RelativeLayout
+            android:id="@+id/rl_iv_logout"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_dr_logout"
+                android:contentDescription="@string/drawer_image_home" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/rl_iv_logout"
+            android:gravity="center_vertical"
+            android:text="@string/dr_tv_logout"
+            android:textColor="@color/white_milky"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/dr_logout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_milky" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
